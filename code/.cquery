@@ -1,0 +1,5 @@
+%clang
+%c -std=gnu11
+%cpp -std=gnu++14
+# Includes
+-I/work/cquery/third_party

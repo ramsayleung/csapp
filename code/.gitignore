@@ -1,0 +1,12 @@
+*/CMakeFiles/*
+code/CMakeFiles/*
+code/io/CMakeFiles/*
+code/link/CMakeFiles/*
+code/opt/CMakeFiles/*
+code/src/CMakeFiles/*
+.idea/*
+*Cache*
+*cache*
+*.a
+*.gch
+*.cbp

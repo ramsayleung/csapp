@@ -1,0 +1,172 @@
+[
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/rename.dir/rename.c.o   -c /home/samray/Code/c/csapp/code/io/rename.c",
+  "file": "/home/samray/Code/c/csapp/code/io/rename.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/cpstdin.dir/cpstdin.c.o   -c /home/samray/Code/c/csapp/code/io/cpstdin.c",
+  "file": "/home/samray/Code/c/csapp/code/io/cpstdin.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/fstatcheck.dir/fstatcheck.c.o   -c /home/samray/Code/c/csapp/code/io/fstatcheck.c",
+  "file": "/home/samray/Code/c/csapp/code/io/fstatcheck.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/cpfile.dir/cpfile.c.o   -c /home/samray/Code/c/csapp/code/io/cpfile.c",
+  "file": "/home/samray/Code/c/csapp/code/io/cpfile.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/statcheck.dir/statcheck.c.o   -c /home/samray/Code/c/csapp/code/io/statcheck.c",
+  "file": "/home/samray/Code/c/csapp/code/io/statcheck.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/_10.6.dir/_10.6.c.o   -c /home/samray/Code/c/csapp/code/io/_10.6.c",
+  "file": "/home/samray/Code/c/csapp/code/io/_10.6.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/_10.5.dir/_10.5.c.o   -c /home/samray/Code/c/csapp/code/io/_10.5.c",
+  "file": "/home/samray/Code/c/csapp/code/io/_10.5.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/readdir.dir/readdir.c.o   -c /home/samray/Code/c/csapp/code/io/readdir.c",
+  "file": "/home/samray/Code/c/csapp/code/io/readdir.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/_10.2.dir/_10.2.c.o   -c /home/samray/Code/c/csapp/code/io/_10.2.c",
+  "file": "/home/samray/Code/c/csapp/code/io/_10.2.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/src",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/csapp.dir/csapp.c.o   -c /home/samray/Code/c/csapp/code/src/csapp.c",
+  "file": "/home/samray/Code/c/csapp/code/src/csapp.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/forkprob4.dir/forkprob4.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob4.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob4.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/waitpid1.dir/waitpid1.c.o   -c /home/samray/Code/c/csapp/code/ecf/waitpid1.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/waitpid1.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/snooze.dir/exercise_8.7.c.o   -c /home/samray/Code/c/csapp/code/ecf/exercise_8.7.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/exercise_8.7.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/signal1.dir/signal1.c.o   -c /home/samray/Code/c/csapp/code/ecf/signal1.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/signal1.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/waitprob0.dir/waitprob0.c.o   -c /home/samray/Code/c/csapp/code/ecf/waitprob0.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/waitprob0.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/forkprob5.dir/forkprob5.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob5.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob5.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/forkprob0.dir/forkprob0.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob0.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob0.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/signal2.dir/signal2.c.o   -c /home/samray/Code/c/csapp/code/ecf/signal2.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/signal2.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/waitpid2.dir/waitpid2.c.o   -c /home/samray/Code/c/csapp/code/ecf/waitpid2.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/waitpid2.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc     -o CMakeFiles/syscall_write.dir/syscall_write.c.o   -c /home/samray/Code/c/csapp/code/ecf/syscall_write.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/syscall_write.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/fork.dir/fork.c.o   -c /home/samray/Code/c/csapp/code/ecf/fork.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/fork.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/forkprob6.dir/forkprob6.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob6.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob6.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/waitprob1.dir/waitprob1.c.o   -c /home/samray/Code/c/csapp/code/ecf/waitprob1.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/waitprob1.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc     -o CMakeFiles/myecho.dir/exercise_8.6.c.o   -c /home/samray/Code/c/csapp/code/ecf/exercise_8.6.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/exercise_8.6.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/shellex.dir/shellex.c.o   -c /home/samray/Code/c/csapp/code/ecf/shellex.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/shellex.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/kill.dir/kill.c.o   -c /home/samray/Code/c/csapp/code/ecf/kill.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/kill.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/sigint.dir/sigint.c.o   -c /home/samray/Code/c/csapp/code/ecf/sigint.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/sigint.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/forkprob3.dir/forkprob3.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob3.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob3.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/forkprob1.dir/forkprob1.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob1.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob1.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/mem",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/mmapcopy.dir/mmapcopy.c.o   -c /home/samray/Code/c/csapp/code/mem/mmapcopy.c",
+  "file": "/home/samray/Code/c/csapp/code/mem/mmapcopy.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/netp",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hostinfo_v2.dir/hostinfo_v2.c.o   -c /home/samray/Code/c/csapp/code/netp/hostinfo_v2.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/hostinfo_v2.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/netp",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hostinfo.dir/hostinfo.c.o   -c /home/samray/Code/c/csapp/code/netp/hostinfo.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/hostinfo.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/netp",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hex2dd.dir/hex2dd.c.o   -c /home/samray/Code/c/csapp/code/netp/hex2dd.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/hex2dd.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/netp",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/dd2hex.dir/dd2hex.c.o   -c /home/samray/Code/c/csapp/code/netp/dd2hex.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/dd2hex.c"
+}
+]

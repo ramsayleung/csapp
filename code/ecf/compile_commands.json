@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc     -o CMakeFiles/forkprob0.dir/forkprob0.c.o   -c /home/samray/Code/c/csapp/code/ecf/forkprob0.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/forkprob0.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc     -o CMakeFiles/syscall_write.dir/syscall_write.c.o   -c /home/samray/Code/c/csapp/code/ecf/syscall_write.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/syscall_write.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/ecf",
+  "command": "/usr/bin/cc     -o CMakeFiles/fork.dir/fork.c.o   -c /home/samray/Code/c/csapp/code/ecf/fork.c",
+  "file": "/home/samray/Code/c/csapp/code/ecf/fork.c"
+}
+]

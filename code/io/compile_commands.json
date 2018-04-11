@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc   -O3 -DNDEBUG   -o CMakeFiles/cpstdin.dir/cpstdin.c.o   -c /home/samray/Code/c/csapp/code/io/cpstdin.c",
+  "file": "/home/samray/Code/c/csapp/code/io/cpstdin.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc   -O3 -DNDEBUG   -o CMakeFiles/cpfile.dir/cpfile.c.o   -c /home/samray/Code/c/csapp/code/io/cpfile.c",
+  "file": "/home/samray/Code/c/csapp/code/io/cpfile.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc   -O3 -DNDEBUG   -o CMakeFiles/readdir.dir/readdir.c.o   -c /home/samray/Code/c/csapp/code/io/readdir.c",
+  "file": "/home/samray/Code/c/csapp/code/io/readdir.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc   -O3 -DNDEBUG   -o CMakeFiles/_10.6.dir/_10.6.c.o   -c /home/samray/Code/c/csapp/code/io/_10.6.c",
+  "file": "/home/samray/Code/c/csapp/code/io/_10.6.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc   -O3 -DNDEBUG   -o CMakeFiles/_10.2.dir/_10.2.c.o   -c /home/samray/Code/c/csapp/code/io/_10.2.c",
+  "file": "/home/samray/Code/c/csapp/code/io/_10.2.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/io",
+  "command": "/usr/bin/cc   -O3 -DNDEBUG   -o CMakeFiles/_10.5.dir/_10.5.c.o   -c /home/samray/Code/c/csapp/code/io/_10.5.c",
+  "file": "/home/samray/Code/c/csapp/code/io/_10.5.c"
+}
+]

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/samray/Code/c/csapp/code/src",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/csapp.dir/csapp.c.o   -c /home/samray/Code/c/csapp/code/src/csapp.c",
+  "file": "/home/samray/Code/c/csapp/code/src/csapp.c"
+}
+]
