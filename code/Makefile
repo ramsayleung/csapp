@@ -501,17 +501,30 @@ mmapcopy/fast:
 .PHONY : mmapcopy/fast
 
 #=============================================================================
-# Target rules for targets named hostinfo_v2
+# Target rules for targets named hex2dd
 
 # Build rule for target.
-hostinfo_v2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hostinfo_v2
-.PHONY : hostinfo_v2
+hex2dd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hex2dd
+.PHONY : hex2dd
 
 # fast build rule for target.
-hostinfo_v2/fast:
-	$(MAKE) -f netp/CMakeFiles/hostinfo_v2.dir/build.make netp/CMakeFiles/hostinfo_v2.dir/build
-.PHONY : hostinfo_v2/fast
+hex2dd/fast:
+	$(MAKE) -f netp/CMakeFiles/hex2dd.dir/build.make netp/CMakeFiles/hex2dd.dir/build
+.PHONY : hex2dd/fast
+
+#=============================================================================
+# Target rules for targets named echoclient
+
+# Build rule for target.
+echoclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echoclient
+.PHONY : echoclient
+
+# fast build rule for target.
+echoclient/fast:
+	$(MAKE) -f netp/CMakeFiles/echoclient.dir/build.make netp/CMakeFiles/echoclient.dir/build
+.PHONY : echoclient/fast
 
 #=============================================================================
 # Target rules for targets named hostinfo
@@ -527,19 +540,6 @@ hostinfo/fast:
 .PHONY : hostinfo/fast
 
 #=============================================================================
-# Target rules for targets named hex2dd
-
-# Build rule for target.
-hex2dd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hex2dd
-.PHONY : hex2dd
-
-# fast build rule for target.
-hex2dd/fast:
-	$(MAKE) -f netp/CMakeFiles/hex2dd.dir/build.make netp/CMakeFiles/hex2dd.dir/build
-.PHONY : hex2dd/fast
-
-#=============================================================================
 # Target rules for targets named dd2hex
 
 # Build rule for target.
@@ -551,6 +551,32 @@ dd2hex: cmake_check_build_system
 dd2hex/fast:
 	$(MAKE) -f netp/CMakeFiles/dd2hex.dir/build.make netp/CMakeFiles/dd2hex.dir/build
 .PHONY : dd2hex/fast
+
+#=============================================================================
+# Target rules for targets named echoserveri
+
+# Build rule for target.
+echoserveri: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echoserveri
+.PHONY : echoserveri
+
+# fast build rule for target.
+echoserveri/fast:
+	$(MAKE) -f netp/CMakeFiles/echoserveri.dir/build.make netp/CMakeFiles/echoserveri.dir/build
+.PHONY : echoserveri/fast
+
+#=============================================================================
+# Target rules for targets named hostinfo_v2
+
+# Build rule for target.
+hostinfo_v2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hostinfo_v2
+.PHONY : hostinfo_v2
+
+# fast build rule for target.
+hostinfo_v2/fast:
+	$(MAKE) -f netp/CMakeFiles/hostinfo_v2.dir/build.make netp/CMakeFiles/hostinfo_v2.dir/build
+.PHONY : hostinfo_v2/fast
 
 # Help Target
 help:
@@ -590,10 +616,12 @@ help:
 	@echo "... forkprob3"
 	@echo "... forkprob1"
 	@echo "... mmapcopy"
-	@echo "... hostinfo_v2"
-	@echo "... hostinfo"
 	@echo "... hex2dd"
+	@echo "... echoclient"
+	@echo "... hostinfo"
 	@echo "... dd2hex"
+	@echo "... echoserveri"
+	@echo "... hostinfo_v2"
 .PHONY : help
 
 

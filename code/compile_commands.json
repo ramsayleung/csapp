@@ -151,8 +151,13 @@
 },
 {
   "directory": "/home/samray/Code/c/csapp/code/netp",
-  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hostinfo_v2.dir/hostinfo_v2.c.o   -c /home/samray/Code/c/csapp/code/netp/hostinfo_v2.c",
-  "file": "/home/samray/Code/c/csapp/code/netp/hostinfo_v2.c"
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hex2dd.dir/hex2dd.c.o   -c /home/samray/Code/c/csapp/code/netp/hex2dd.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/hex2dd.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/netp",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/echoclient.dir/echoclient.c.o   -c /home/samray/Code/c/csapp/code/netp/echoclient.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/echoclient.c"
 },
 {
   "directory": "/home/samray/Code/c/csapp/code/netp",
@@ -161,12 +166,17 @@
 },
 {
   "directory": "/home/samray/Code/c/csapp/code/netp",
-  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hex2dd.dir/hex2dd.c.o   -c /home/samray/Code/c/csapp/code/netp/hex2dd.c",
-  "file": "/home/samray/Code/c/csapp/code/netp/hex2dd.c"
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/dd2hex.dir/dd2hex.c.o   -c /home/samray/Code/c/csapp/code/netp/dd2hex.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/dd2hex.c"
 },
 {
   "directory": "/home/samray/Code/c/csapp/code/netp",
-  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/dd2hex.dir/dd2hex.c.o   -c /home/samray/Code/c/csapp/code/netp/dd2hex.c",
-  "file": "/home/samray/Code/c/csapp/code/netp/dd2hex.c"
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/echoserveri.dir/echoserveri.c.o   -c /home/samray/Code/c/csapp/code/netp/echoserveri.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/echoserveri.c"
+},
+{
+  "directory": "/home/samray/Code/c/csapp/code/netp",
+  "command": "/usr/bin/cc  -I/home/samray/Code/c/csapp/code/src    -o CMakeFiles/hostinfo_v2.dir/hostinfo_v2.c.o   -c /home/samray/Code/c/csapp/code/netp/hostinfo_v2.c",
+  "file": "/home/samray/Code/c/csapp/code/netp/hostinfo_v2.c"
 }
 ]

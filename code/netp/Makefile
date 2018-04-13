@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/samray/Code/c/csapp/code
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,19 +111,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-netp/CMakeFiles/hostinfo_v2.dir/rule:
-	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/hostinfo_v2.dir/rule
-.PHONY : netp/CMakeFiles/hostinfo_v2.dir/rule
+netp/CMakeFiles/hex2dd.dir/rule:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/hex2dd.dir/rule
+.PHONY : netp/CMakeFiles/hex2dd.dir/rule
 
 # Convenience name for target.
-hostinfo_v2: netp/CMakeFiles/hostinfo_v2.dir/rule
+hex2dd: netp/CMakeFiles/hex2dd.dir/rule
 
-.PHONY : hostinfo_v2
+.PHONY : hex2dd
 
 # fast build rule for target.
-hostinfo_v2/fast:
-	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/hostinfo_v2.dir/build.make netp/CMakeFiles/hostinfo_v2.dir/build
-.PHONY : hostinfo_v2/fast
+hex2dd/fast:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/hex2dd.dir/build.make netp/CMakeFiles/hex2dd.dir/build
+.PHONY : hex2dd/fast
+
+# Convenience name for target.
+netp/CMakeFiles/echoclient.dir/rule:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/echoclient.dir/rule
+.PHONY : netp/CMakeFiles/echoclient.dir/rule
+
+# Convenience name for target.
+echoclient: netp/CMakeFiles/echoclient.dir/rule
+
+.PHONY : echoclient
+
+# fast build rule for target.
+echoclient/fast:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoclient.dir/build.make netp/CMakeFiles/echoclient.dir/build
+.PHONY : echoclient/fast
 
 # Convenience name for target.
 netp/CMakeFiles/hostinfo.dir/rule:
@@ -141,21 +156,6 @@ hostinfo/fast:
 .PHONY : hostinfo/fast
 
 # Convenience name for target.
-netp/CMakeFiles/hex2dd.dir/rule:
-	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/hex2dd.dir/rule
-.PHONY : netp/CMakeFiles/hex2dd.dir/rule
-
-# Convenience name for target.
-hex2dd: netp/CMakeFiles/hex2dd.dir/rule
-
-.PHONY : hex2dd
-
-# fast build rule for target.
-hex2dd/fast:
-	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/hex2dd.dir/build.make netp/CMakeFiles/hex2dd.dir/build
-.PHONY : hex2dd/fast
-
-# Convenience name for target.
 netp/CMakeFiles/dd2hex.dir/rule:
 	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/dd2hex.dir/rule
 .PHONY : netp/CMakeFiles/dd2hex.dir/rule
@@ -169,6 +169,36 @@ dd2hex: netp/CMakeFiles/dd2hex.dir/rule
 dd2hex/fast:
 	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/dd2hex.dir/build.make netp/CMakeFiles/dd2hex.dir/build
 .PHONY : dd2hex/fast
+
+# Convenience name for target.
+netp/CMakeFiles/echoserveri.dir/rule:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/echoserveri.dir/rule
+.PHONY : netp/CMakeFiles/echoserveri.dir/rule
+
+# Convenience name for target.
+echoserveri: netp/CMakeFiles/echoserveri.dir/rule
+
+.PHONY : echoserveri
+
+# fast build rule for target.
+echoserveri/fast:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoserveri.dir/build.make netp/CMakeFiles/echoserveri.dir/build
+.PHONY : echoserveri/fast
+
+# Convenience name for target.
+netp/CMakeFiles/hostinfo_v2.dir/rule:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f CMakeFiles/Makefile2 netp/CMakeFiles/hostinfo_v2.dir/rule
+.PHONY : netp/CMakeFiles/hostinfo_v2.dir/rule
+
+# Convenience name for target.
+hostinfo_v2: netp/CMakeFiles/hostinfo_v2.dir/rule
+
+.PHONY : hostinfo_v2
+
+# fast build rule for target.
+hostinfo_v2/fast:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/hostinfo_v2.dir/build.make netp/CMakeFiles/hostinfo_v2.dir/build
+.PHONY : hostinfo_v2/fast
 
 dd2hex.o: dd2hex.c.o
 
@@ -196,6 +226,60 @@ dd2hex.s: dd2hex.c.s
 dd2hex.c.s:
 	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/dd2hex.dir/build.make netp/CMakeFiles/dd2hex.dir/dd2hex.c.s
 .PHONY : dd2hex.c.s
+
+echoclient.o: echoclient.c.o
+
+.PHONY : echoclient.o
+
+# target to build an object file
+echoclient.c.o:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoclient.dir/build.make netp/CMakeFiles/echoclient.dir/echoclient.c.o
+.PHONY : echoclient.c.o
+
+echoclient.i: echoclient.c.i
+
+.PHONY : echoclient.i
+
+# target to preprocess a source file
+echoclient.c.i:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoclient.dir/build.make netp/CMakeFiles/echoclient.dir/echoclient.c.i
+.PHONY : echoclient.c.i
+
+echoclient.s: echoclient.c.s
+
+.PHONY : echoclient.s
+
+# target to generate assembly for a file
+echoclient.c.s:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoclient.dir/build.make netp/CMakeFiles/echoclient.dir/echoclient.c.s
+.PHONY : echoclient.c.s
+
+echoserveri.o: echoserveri.c.o
+
+.PHONY : echoserveri.o
+
+# target to build an object file
+echoserveri.c.o:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoserveri.dir/build.make netp/CMakeFiles/echoserveri.dir/echoserveri.c.o
+.PHONY : echoserveri.c.o
+
+echoserveri.i: echoserveri.c.i
+
+.PHONY : echoserveri.i
+
+# target to preprocess a source file
+echoserveri.c.i:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoserveri.dir/build.make netp/CMakeFiles/echoserveri.dir/echoserveri.c.i
+.PHONY : echoserveri.c.i
+
+echoserveri.s: echoserveri.c.s
+
+.PHONY : echoserveri.s
+
+# target to generate assembly for a file
+echoserveri.c.s:
+	cd /home/samray/Code/c/csapp/code && $(MAKE) -f netp/CMakeFiles/echoserveri.dir/build.make netp/CMakeFiles/echoserveri.dir/echoserveri.c.s
+.PHONY : echoserveri.c.s
 
 hex2dd.o: hex2dd.c.o
 
@@ -284,15 +368,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hostinfo_v2"
-	@echo "... hostinfo"
 	@echo "... hex2dd"
+	@echo "... edit_cache"
+	@echo "... echoclient"
+	@echo "... hostinfo"
 	@echo "... dd2hex"
+	@echo "... echoserveri"
+	@echo "... hostinfo_v2"
 	@echo "... dd2hex.o"
 	@echo "... dd2hex.i"
 	@echo "... dd2hex.s"
+	@echo "... echoclient.o"
+	@echo "... echoclient.i"
+	@echo "... echoclient.s"
+	@echo "... echoserveri.o"
+	@echo "... echoserveri.i"
+	@echo "... echoserveri.s"
 	@echo "... hex2dd.o"
 	@echo "... hex2dd.i"
 	@echo "... hex2dd.s"

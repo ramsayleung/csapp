@@ -348,4 +348,107 @@ void Getnameinfo(const struct sockaddr *sa, socklen_t salen, char *host,
     gai_error(rc, "Getnameinfo error");
 }
 
+void Getaddrinfo(const char *host, const char *service,
+                 const struct addrinfo *hints, struct addrinfo **result) {
+  int rc;
+  if ((rc = getaddrinfo(host, service, hints, result)) != 0)
+    gai_error(rc, "Getaddrinfo error");
+}
+
 void Freeaddrinfo(struct addrinfo *res) { freeaddrinfo(res); }
+
+int open_clientfd(char *hostname, char *port) {
+  int clientfd;
+  struct addrinfo hints, *listp, *p;
+
+  /* Get a list of potential server addresses */
+  memset(&hints, 0, sizeof(struct addrinfo));
+  hints.ai_socktype = SOCK_STREAM; /* Open a connection */
+  hints.ai_flags = AI_NUMERICSERV; /* ... using a numeric port arg. */
+  hints.ai_flags |= AI_ADDRCONFIG; /* Recommended for connection */
+  Getaddrinfo(hostname, port, &hints, &listp);
+
+  /* Walk the list for one that we can successfully connect to */
+  for (p = listp; p; p = p->ai_next) {
+    /* Create a socket descriptor */
+    if ((clientfd = socket(p->ai_family, p->ai_socktype, p->ai_protocol)) < 0)
+      continue; /* SOcket failed, try the next */
+    /* Connect to the server */
+    if (connect(clientfd, p->ai_addr, p->ai_addrlen) != -1)
+      break;         /* Success */
+    Close(clientfd); /* Connect failed, try another */
+  }
+  /* Clean up */
+  Freeaddrinfo(listp);
+  if (!p) /* All connects failed */
+    return -1;
+  else /* The last connect succeeded */
+    return clientfd;
+}
+
+int open_listened(char *port) {
+  struct addrinfo hints, *listp, *p;
+  int listenfd, optval = 1;
+  /* Get a list of potential server addresses */
+  memset(&hints, 0, sizeof(struct addrinfo));
+  hints.ai_socktype = SOCK_STREAM;             /* Accept connection */
+  hints.ai_flags = AI_PASSIVE | AI_ADDRCONFIG; /* ... on any IP address */
+  hints.ai_flags |= AI_NUMERICSERV;
+  Getaddrinfo(NULL, port, &hints, &listp);
+
+  /* Walk the list for one that we can bind to */
+  for (p = listp; p; p = p->ai_next) {
+    /* Create a socket descriptor */
+    if ((listenfd = socket(p->ai_family, p->ai_socktype, p->ai_protocol)) < 0)
+      continue; /* Socket failed,try the next */
+    /* Eliminates "Address already in use" error from bind*/
+    Setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, (const void *)&optval,
+               sizeof(int));
+    /* Bind the descriptor to the address */
+    if (bind(listenfd, p->ai_addr, p->ai_addrlen) == 0)
+      break;         /* Success */
+    Close(listenfd); /* Bind failed, try the next */
+  }
+  /* Clean up  */
+  Freeaddrinfo(listp);
+  if (!p) /* No address worked */
+    return -1;
+  /* Make it a listening socket ready to accept connection requests */
+  if (listen(listenfd, LISTENQ) < 0) {
+    Close(listenfd);
+    return -1;
+  }
+  return listenfd;
+}
+
+int Accept(int listenfd, struct sockaddr *addr, socklen_t *addrlen) {
+  int rc;
+  if ((rc = accept(listenfd, addr, addrlen)) < 0)
+    unix_error("Accept error");
+  return rc;
+}
+
+int Open_listenfd(char *port) {
+  int rc;
+  if ((rc = open_listened(port)) < 0)
+    unix_error("Open listened error");
+  return rc;
+}
+
+int Open_clientfd(char *hostname, char *port) {
+  int rc;
+  if ((rc = open_clientfd(hostname, port)) < 0)
+    unix_error("Open clientfd error");
+  return rc;
+}
+
+void Setsockopt(int s, int level, int optname, const void *optval, int optlen) {
+  int rc;
+  if ((rc = setsockopt(s, level, optname, optval, optlen)) < 0)
+    unix_error("Setsocekt error");
+}
+
+void Fputs(const char *ptr, FILE *stream) {
+  if (fputs(ptr, stream) == EOF)
+    unix_error("Fputs error");
+}
